@@ -9,11 +9,13 @@ while True:
     print("2.subtrair")
     print("3.multiplicar")
     print("4.dividir")
-    print("5.sair")
+    print("5.potenciação")
+    print("6.sair")
+
 
     escolha = input("escolha uma opção:")
 
-    if escolha == "5":
+    if escolha == "6":
         print("encerrando o programa em:")
         for i in range(5,0,-1):
             print(i)
@@ -48,3 +50,11 @@ while True:
         resultado = n1 / n2    
 
         print(f"o resultado da divisão entre {n1} e {n2} é: ", resultado)
+
+# ADICIONADO: Nova operação de potenciação
+    if escolha == "5":
+        n1 = int(input("digite o primeiro valor: "))
+        n2 = int(input("digite o segundo valor: "))
+        resultado = n1 ** n2
+
+        print(f"o resultado da potenciação entre {n1} e {n2} é: ", resultado)
